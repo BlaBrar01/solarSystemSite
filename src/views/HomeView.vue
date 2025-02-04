@@ -55,7 +55,7 @@ PlanetChange();
 </script>
 
 <template>
-  <main>
+  <main style="overflow:visible">
     <div class="home_container" id="app">   
       <HalfP :planet=planet></HalfP>
       <HalfT :planet=planet></HalfT>

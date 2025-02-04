@@ -26,7 +26,6 @@ saturn_planet[0].style.display = "none"
 saturn_planet[1].style.display = "none"
 saturn_ring[0].style.display = "none"
 planet_expose.className = props.planet;
-
 function PlanetChange(){
   if(props.planet == "Sun"){
           planet_animation[0].id = "animete_bottom"
@@ -47,7 +46,7 @@ function PlanetChange(){
             saturn_planet[1].style.display = "none"
             saturn_ring[0].style.display = "none"
             planet_expose.className = "Mercury";
-            planet_animation[0].id = "animete_top"
+            planet_animation[0].id = "animete_top-mercury"
     }, 500);  
 }
     if(props.planet == "Venus"){
@@ -82,7 +81,7 @@ function PlanetChange(){
             saturn_planet[1].style.display = "none"
             saturn_ring[0].style.display = "none"
             planet_expose.className = "Mars";
-            planet_animation[0].id = "animete_top"
+            planet_animation[0].id = "animete_top-mars"
     }, 500);  
 }
     if(props.planet == "Jupiter"){
@@ -160,6 +159,12 @@ watch(() => props.planet, () =>{
 }
 #animete_top{
   animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+#animete_top-mars{
+  animation: slide-top-mars 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+#animete_top-mercury{
+  animation: slide-top-mercury 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
 
@@ -287,7 +292,6 @@ watch(() => props.planet, () =>{
   overflow: hidden;
   box-shadow: 0 0 20px rgba(150, 100, 50, 0.5);
 }
-
 .Jupiter::before {
   content: "";
   position: absolute;
@@ -300,7 +304,6 @@ watch(() => props.planet, () =>{
   border-radius: 50%;
   filter: contrast(1.2) brightness(1);
 }
-
 .Jupiter::after {
   content: "";
   position: absolute;
@@ -319,7 +322,6 @@ watch(() => props.planet, () =>{
   overflow: hidden;
   box-shadow: 0 0 20px rgba(100, 50, 50, 0.5);
 }
-
 .Mars::before {
   content: "";
   position: absolute;
@@ -332,7 +334,6 @@ watch(() => props.planet, () =>{
   border-radius: 50%;
   filter: contrast(1.3) brightness(0.9);
 }
-
 .Mars::after {
   content: "";
   position: absolute;
@@ -480,8 +481,8 @@ watch(() => props.planet, () =>{
             transform: translateY(0);
   }
   100% {
-    -webkit-transform: translateY(-100rem);
-            transform: translateY(-100rem);
+    -webkit-transform: translateY(-105rem);
+            transform: translateY(-105rem);
   }
 }
 @keyframes slide-top {
@@ -490,8 +491,58 @@ watch(() => props.planet, () =>{
             transform: translateY(0);
   }
   100% {
-    -webkit-transform: translateY(-100rem);
-            transform: translateY(-100rem);
+    -webkit-transform: translateY(-105rem);
+            transform: translateY(-105rem);
+  }
+}
+/**
+ * ----------------------------------------
+ * animation slide-top-mars
+ * ----------------------------------------
+ */
+ @-webkit-keyframes slide-top-mars {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-110rem);
+            transform: translateY(-110rem);
+  }
+}
+@keyframes slide-top-mars {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-110rem);
+            transform: translateY(-110rem);
+  }
+}
+/**
+ * ----------------------------------------
+ * animation slide-top-mercury
+ * ----------------------------------------
+ */
+ @-webkit-keyframes slide-top-mercury {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-110rem);
+            transform: translateY(-110rem);
+  }
+}
+@keyframes slide-top-mercury {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-110rem);
+            transform: translateY(-110rem);
   }
 }
 /**
