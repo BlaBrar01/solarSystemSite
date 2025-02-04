@@ -8,7 +8,7 @@
               <div class="planet top planet-bg"></div>
           </div>
         </div>
-    </div>
+        </div>
 </template>
 <script setup>
 import { watch, onMounted } from "vue";

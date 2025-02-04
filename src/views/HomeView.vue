@@ -55,12 +55,13 @@ PlanetChange();
 </script>
 
 <template>
-  <main style="overflow:visible">
-    <div class="home_container" id="app">   
+  <main style="overflow:visible"> 
+      <div class="responsivity_box">  
+      <div class="home_container" id="app">
       <HalfP :planet=planet></HalfP>
       <HalfT :planet=planet></HalfT>
     </div>
-
+</div>
   </main>
 </template>
 <style>
@@ -68,6 +69,9 @@ PlanetChange();
   display: flex;
   padding:60px 32px 50px 32px;
   overflow:visible;
+}
+.responsivity_box{
+  overflow: visible;
 }
 
 /* Global formatting */
@@ -84,5 +88,34 @@ PlanetChange();
   transition: all 0.2s ease;
   padding-left:25px;
   border-left:3px solid var(--color);
+}
+/* Responsitivity */
+
+@media only screen and (max-width: 1024px) {
+  .half_container_text {
+    transition: all 0.2s ease;
+    padding-bottom:25px;
+    padding-left:0;
+    padding-right:0;
+    margin-bottom:25px;
+    border-left: none;
+    border-bottom:3px solid var(--color);
+    min-height:300px;
+}
+.half_container{
+  width:100%!important;
+  margin-left:0px!important;
+}
+.home_container{
+  flex-direction: column-reverse!important;
+}
+
+.responsivity_box{
+  max-height:1000px;
+  width:99%;
+  position:absolute;
+  overflow:scroll;
+}
+
 }
 </style>
