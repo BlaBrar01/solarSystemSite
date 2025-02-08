@@ -37,7 +37,7 @@ function PlanetChange(): void{
   }
 }
 import { useRoute } from "vue-router";
-import { ref, watch } from "vue";
+import { ref, watch, onMounted } from "vue";
 import HalfT from '../Templates/HalfScreenText.vue'
 import HalfP from '../Templates/HalfScreenPhotos.vue'
 
@@ -52,15 +52,15 @@ watch(() => route.params.planet, (newPlanet) =>{
 planet.value = newPlanet;
 PlanetChange();
 });
+
+
 </script>
 
 <template>
   <main style="overflow:visible"> 
-      <div class="responsivity_box">  
       <div class="home_container" id="app">
       <HalfP :planet=planet></HalfP>
       <HalfT :planet=planet></HalfT>
-    </div>
 </div>
   </main>
 </template>
@@ -69,9 +69,7 @@ PlanetChange();
   display: flex;
   padding:60px 32px 50px 32px;
   overflow:visible;
-}
-.responsivity_box{
-  overflow: visible;
+  position:relative;
 }
 
 /* Global formatting */
@@ -108,13 +106,6 @@ PlanetChange();
 }
 .home_container{
   flex-direction: column-reverse!important;
-}
-
-.responsivity_box{
-  max-height:1000px;
-  width:99%;
-  position:absolute;
-  overflow:scroll;
 }
 
 }
