@@ -26,5 +26,30 @@ import Particles from './components/Particles.vue'
   .main_container{
     margin:16px 16px 16px 16px;
   }
-  
+::-webkit-scrollbar {
+  width: 3px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px #0d0d0d;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--color);
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color);
+}
+  @media only screen and (max-width: 666px) {
+    *{font-size: 12px;}
+
+
+  }
+
 </style>

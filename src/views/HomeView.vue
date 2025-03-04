@@ -135,7 +135,7 @@ PlanetChange();
 
 }
 .box{
-  height:900px;
+  height:1000px;
   overflow:hidden;
 }
 .home_container{

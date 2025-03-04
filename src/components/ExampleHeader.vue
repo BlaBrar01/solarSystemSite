@@ -107,6 +107,7 @@ const particlesLoaded = (container) => {
         }"
               />
         </div>
+      <div class="container__options">
         <nav class="container__main">
             <ul class="nav-routes">
               <RouterLink class="nav-routes_element" to="/">System</RouterLink>
@@ -126,6 +127,7 @@ const particlesLoaded = (container) => {
                 <RouterLink class="nav-routes_element" to="/Neptune">Neptune</RouterLink>
             </ul>
         </nav>
+      </div>
     </div>
     </header>
 </template>
@@ -157,10 +159,15 @@ const particlesLoaded = (container) => {
   .burger{
     display: none;
   }
+  .container__options{
+    display:flex;
+    flex-direction: row;
+  }
   @media only screen and (max-width: 1024px) {
     .burger{
-      display: block;
-      margin:32px;
+      display: flex;
+      margin: 32px;
+      justify-content: flex-end;
     }
     .nav-routes{
       font-size:15px;
@@ -180,7 +187,8 @@ const particlesLoaded = (container) => {
     overflow: visible;
     left:-40vw;
     justify-content: flex-start;
-    padding-top:20vh
+
+
     }
     header{
       padding-top: 25px;
@@ -192,9 +200,16 @@ const particlesLoaded = (container) => {
     top: 0;
     left: 0;
     z-index: -1;
-    border-right:1px solid var(--color);
     margin-top:15px;
     margin-bottom:15px;
+
+}
+.container__options{
+    overflow-y:auto;
+    overflow-x:hidden;
+    flex-direction: column;
+    width: 100%;
+
 }
 
 }
