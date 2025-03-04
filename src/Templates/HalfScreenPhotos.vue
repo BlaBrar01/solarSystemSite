@@ -1,6 +1,6 @@
 
 <template>
-    <div class="half_container">
+    <div class="half_container" id="half_conntainer_planet">
         <div class="planet_container" id="animete_top">
           <div id="planet_expose" class=" ">
               <div class="planet bottom planet-bg"></div>
@@ -29,60 +29,60 @@ planet_expose.className = props.planet;
 function PlanetChange(){
   if(props.planet == "Sun"){
           planet_animation[0].id = "animete_bottom"
-          setTimeout(function(){ 
+          setTimeout(function(){
             planet_expose.style.display = "block"
             saturn_planet[0].style.display = "none"
             saturn_planet[1].style.display = "none"
             saturn_ring[0].style.display = "none"
             planet_expose.className = "Sun";
             planet_animation[0].id = "animete_top"
-    }, 500);  
+    }, 500);
 }
     if(props.planet == "Mercury"){
           planet_animation[0].id = "animete_bottom"
-          setTimeout(function(){ 
+          setTimeout(function(){
             planet_expose.style.display = "block"
             saturn_planet[0].style.display = "none"
             saturn_planet[1].style.display = "none"
             saturn_ring[0].style.display = "none"
             planet_expose.className = "Mercury";
             planet_animation[0].id = "animete_top-mercury"
-    }, 500);  
+    }, 500);
 }
     if(props.planet == "Venus"){
 
       planet_animation[0].id = "animete_bottom"
-          setTimeout(function(){ 
+          setTimeout(function(){
             planet_expose.style.display = "block"
             saturn_planet[0].style.display = "none"
             saturn_planet[1].style.display = "none"
             saturn_ring[0].style.display = "none"
             planet_expose.className = "Venus";
             planet_animation[0].id = "animete_top"
-    }, 500);  
+    }, 500);
 }
     if(props.planet == "Earth"){
       planet_animation[0].id = "animete_bottom"
           setTimeout(function(){
-            planet_expose.style.display = "block" 
+            planet_expose.style.display = "block"
             saturn_planet[0].style.display = "none"
             saturn_planet[1].style.display = "none"
             saturn_ring[0].style.display = "none"
             planet_expose.className = "Earth";
             planet_animation[0].id = "animete_top"
-    }, 500);  
+    }, 500);
 }
     if(props.planet == "Mars"){
 
       planet_animation[0].id = "animete_bottom"
-          setTimeout(function(){ 
+          setTimeout(function(){
             planet_expose.style.display = "block"
             saturn_planet[0].style.display = "none"
             saturn_planet[1].style.display = "none"
             saturn_ring[0].style.display = "none"
             planet_expose.className = "Mars";
             planet_animation[0].id = "animete_top-mars"
-    }, 500);  
+    }, 500);
 }
     if(props.planet == "Jupiter"){
 
@@ -94,7 +94,7 @@ function PlanetChange(){
             saturn_ring[0].style.display = "none"
             planet_expose.className = "Jupiter";
             planet_animation[0].id = "animete_top"
-    }, 500);  
+    }, 500);
 }
     if(props.planet == "Saturn"){
 
@@ -106,7 +106,7 @@ function PlanetChange(){
             saturn_ring[0].style.display = "block"
             planet_expose.className = "Saturn";
             planet_animation[0].id = "animete_top"
-    }, 500);  
+    }, 500);
 }
     if(props.planet == "Uranus"){
 
@@ -118,18 +118,18 @@ function PlanetChange(){
             saturn_ring[0].style.display = "none"
             planet_expose.className = "Uranus";
             planet_animation[0].id = "animete_top"
-    }, 500);  
+    }, 500);
 }
     if(props.planet == "Neptune"){
-          planet_animation[0].id = "animete_bottom"  
-          setTimeout(function(){ 
+          planet_animation[0].id = "animete_bottom"
+          setTimeout(function(){
             planet_expose.style.display = "block"
             saturn_planet[0].style.display = "none"
             saturn_planet[1].style.display = "none"
             saturn_ring[0].style.display = "none"
             planet_expose.className = "Neptune";
             planet_animation[0].id = "animete_top"
-    }, 500);  
+    }, 500);
   }
 }
 PlanetChange();
@@ -139,6 +139,12 @@ watch(() => props.planet, () =>{
 })
 </script>
 <style lang="scss" scoped>
+
+@media only screen and (max-width: 1024px) {
+#half_conntainer_planet{
+  top:450px;
+}
+}
 .half_container{
     display: flex;
     width:50%;
@@ -152,7 +158,7 @@ watch(() => props.planet, () =>{
     width:100%;
     justify-content: center;
     align-items: center;
-    overflow: visible;  
+    overflow: visible;
 }
 #animete_bottom{
   animation: slide-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
@@ -245,7 +251,7 @@ watch(() => props.planet, () =>{
   position: relative;
   width: 100%;
   height: 100%;
-  
+
   background: -moz-radial-gradient(center, ellipse cover,  rgba(24,19,25,0) 0%, rgba(53,52,51,0) 34%, rgba(55,54,52,1) 36%, rgba(56,55,53,1) 37%, rgba(68,67,66,1) 38%, rgba(56,55,53,1) 39%, rgba(68,67,66,1) 40%, rgba(56,55,53,1) 41%, rgba(87,77,76,1) 42%, rgba(87,77,76,1) 44%, rgba(113,110,103,1) 46%, rgba(113,110,103,1) 48%, rgba(113,98,93,1) 49%, rgba(113,98,93,1) 51%, rgba(122,115,105,1) 52%, rgba(113,98,93,1) 53%, rgba(113,98,93,1) 54%, rgba(122,115,105,1) 55%, rgba(106,99,89,1) 56%, rgba(106,99,89,1) 58%, rgba(79,76,76,0) 60%, rgba(65,64,70,1) 61%, rgba(65,64,70,1) 62%, rgba(90,85,89,1) 63%, rgba(78,74,73,1) 65%, rgba(78,73,74,1) 67%, rgba(78,73,74,0) 68%, rgba(78,73,75,1) 69%, rgba(78,73,75,1) 70%, rgba(78,73,76,0) 71%, rgba(77,72,76,0) 72%, rgba(24,19,25,0) 100%);
   background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(24,19,25,0)), color-stop(34%,rgba(53,52,51,0)), color-stop(36%,rgba(55,54,52,1)), color-stop(37%,rgba(56,55,53,1)), color-stop(38%,rgba(68,67,66,1)), color-stop(39%,rgba(56,55,53,1)), color-stop(40%,rgba(68,67,66,1)), color-stop(41%,rgba(56,55,53,1)), color-stop(42%,rgba(87,77,76,1)), color-stop(44%,rgba(87,77,76,1)), color-stop(46%,rgba(113,110,103,1)), color-stop(48%,rgba(113,110,103,1)), color-stop(49%,rgba(113,98,93,1)), color-stop(51%,rgba(113,98,93,1)), color-stop(52%,rgba(122,115,105,1)), color-stop(53%,rgba(113,98,93,1)), color-stop(54%,rgba(113,98,93,1)), color-stop(55%,rgba(122,115,105,1)), color-stop(56%,rgba(106,99,89,1)), color-stop(58%,rgba(106,99,89,1)), color-stop(60%,rgba(79,76,76,0)), color-stop(61%,rgba(65,64,70,1)), color-stop(62%,rgba(65,64,70,1)), color-stop(63%,rgba(90,85,89,1)), color-stop(65%,rgba(78,74,73,1)), color-stop(67%,rgba(78,73,74,1)), color-stop(68%,rgba(78,73,74,0)), color-stop(69%,rgba(78,73,75,1)), color-stop(70%,rgba(78,73,75,1)), color-stop(71%,rgba(78,73,76,0)), color-stop(72%,rgba(77,72,76,0)), color-stop(100%,rgba(24,19,25,0)));
   background: -webkit-radial-gradient(center, ellipse cover,  rgba(24,19,25,0) 0%,rgba(53,52,51,0) 34%,rgba(55,54,52,1) 36%,rgba(56,55,53,1) 37%,rgba(68,67,66,1) 38%,rgba(56,55,53,1) 39%,rgba(68,67,66,1) 40%,rgba(56,55,53,1) 41%,rgba(87,77,76,1) 42%,rgba(87,77,76,1) 44%,rgba(113,110,103,1) 46%,rgba(113,110,103,1) 48%,rgba(113,98,93,1) 49%,rgba(113,98,93,1) 51%,rgba(122,115,105,1) 52%,rgba(113,98,93,1) 53%,rgba(113,98,93,1) 54%,rgba(122,115,105,1) 55%,rgba(106,99,89,1) 56%,rgba(106,99,89,1) 58%,rgba(79,76,76,0) 60%,rgba(65,64,70,1) 61%,rgba(65,64,70,1) 62%,rgba(90,85,89,1) 63%,rgba(78,74,73,1) 65%,rgba(78,73,74,1) 67%,rgba(78,73,74,0) 68%,rgba(78,73,75,1) 69%,rgba(78,73,75,1) 70%,rgba(78,73,76,0) 71%,rgba(77,72,76,0) 72%,rgba(24,19,25,0) 100%);
@@ -297,7 +303,7 @@ watch(() => props.planet, () =>{
   position: absolute;
   width: 100%;
   height: 100%;
-  background: url("../planets/Jupiter.jpg"); 
+  background: url("../planets/Jupiter.jpg");
   background-size: cover;
   opacity: 0.8;
   mix-blend-mode: overlay;
@@ -327,7 +333,7 @@ watch(() => props.planet, () =>{
   position: absolute;
   width: 100%;
   height: 100%;
-  background: url("../planets/Mars.jpg"); 
+  background: url("../planets/Mars.jpg");
   background-size: cover;
   opacity: 0.7;
   mix-blend-mode: overlay;
@@ -358,7 +364,7 @@ watch(() => props.planet, () =>{
   position: absolute;
   width: 100%;
   height: 100%;
-  background: url("../planets/Earth.jpg"); 
+  background: url("../planets/Earth.jpg");
   background-size: cover;
   opacity: 0.7;
   mix-blend-mode: overlay;

@@ -18,11 +18,11 @@ const particlesLoaded = (container) => {
           :particlesLoaded="particlesLoaded"
           :options="{
     background: {
-                color: '#0d0d0d', 
+                color: '#0d0d0d',
     },
     particles: {
         number: {
-        value: 100,
+        value: 200,
         density: {
             enable: true,
             area: 800,
@@ -45,7 +45,7 @@ const particlesLoaded = (container) => {
         },
         },
         size: {
-        value: { min: 1, max: 3 },
+        value: { min: 0.5, max: 3 },
         random: true,
         },
         move: {
