@@ -187,7 +187,7 @@ watch(() => props.planet, () =>{
   position: absolute;
   width: 100%;
   height: 100%;
-  background: url("../planets/Neptune.jpg");
+  background: url("../assets/Neptune.jpg");
   background-size: cover;
   opacity: 0.6;
   mix-blend-mode: overlay;
@@ -219,7 +219,7 @@ watch(() => props.planet, () =>{
   position: absolute;
   width: 100%;
   height: 100%;
-  background: url("../planets/Uranus.jpg");
+  background: url("../assets/Uranus.jpg");
   background-size: cover;
   opacity: 0.6;
   mix-blend-mode: overlay;
@@ -300,7 +300,7 @@ watch(() => props.planet, () =>{
   position: absolute;
   width: 100%;
   height: 100%;
-  background: url("../planets/Jupiter.jpg");
+  background: url("../assets/Jupiter.jpg");
   background-size: cover;
   opacity: 0.8;
   mix-blend-mode: overlay;
@@ -330,7 +330,7 @@ watch(() => props.planet, () =>{
   position: absolute;
   width: 100%;
   height: 100%;
-  background: url("../planets/Mars.jpg");
+  background: url("../assets/Mars.jpg");
   background-size: cover;
   opacity: 0.7;
   mix-blend-mode: overlay;
@@ -361,7 +361,7 @@ watch(() => props.planet, () =>{
   position: absolute;
   width: 100%;
   height: 100%;
-  background: url("../planets/Earth.jpg");
+  background: url("../assets/Earth.jpg");
   background-size: cover;
   opacity: 0.7;
   mix-blend-mode: overlay;
@@ -393,7 +393,7 @@ watch(() => props.planet, () =>{
     position: absolute;
     width: 100%;
     height: 100%;
-    background: url("../planets/Venus.jpg"); /* Cloud pattern for Venus */
+    background: url("../assets/Venus.jpg"); /* Cloud pattern for Venus */
     background-size: cover;
     opacity: 1;
     mix-blend-mode: overlay;
@@ -425,7 +425,7 @@ watch(() => props.planet, () =>{
   position: absolute;
   width: 100%;
   height: 100%;
-  background: url("../planets/Mercury.jpg");
+  background: url("../assets/Mercury.jpg");
   background-size: cover;
   opacity: 0.8;
   mix-blend-mode: overlay;
