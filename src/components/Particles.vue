@@ -2,16 +2,14 @@
 import { loadFull } from "tsparticles";
 
 const particlesInit = async (engine) => {
-  console.log("Particles Init", engine);
   await loadFull(engine);
 };
 
 const particlesLoaded = (container) => {
-  console.log("Particles Loaded", container);
+
 };
 </script>
 <template>
-  <div id="app">
       <vue-particles
           id="tsparticles"
           :particlesInit="particlesInit"
@@ -77,7 +75,6 @@ const particlesLoaded = (container) => {
   },
 }"
       />
-  </div>
 </template>
 <style lang="scss" scoped>
     .particles_container{

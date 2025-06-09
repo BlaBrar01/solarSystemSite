@@ -55,8 +55,9 @@ function scroll() {
 }
 import { useRoute } from "vue-router";
 import { ref, watch, onMounted } from "vue";
-import HalfT from '../Templates/HalfScreenText.vue'
-import HalfP from '../Templates/HalfScreenPhotos.vue'
+import HalfT from '@/Templates/HalfScreenText.vue'
+import HalfP from '@/Templates/HalfScreenPhotos.vue'
+import LangChanger from '@/components/LangChooseSpeedDial.vue'
 
 defineProps({
   planet: String
@@ -75,14 +76,15 @@ PlanetChange();
 </script>
 
 <template>
-  <main style="overflow:visible; pointer-events: none; z-index: 1;">
-      <div class="home_container" id="app">
+
+      <div class="home_container">
         <div class="box">
           <HalfP :planet=planet></HalfP>
           <HalfT :planet=planet></HalfT>
         </div>
+        <LangChanger/>
+
       </div>
-  </main>
 </template>
 <style>
 .box{
@@ -130,13 +132,11 @@ PlanetChange();
 .half_container{
   width:100%!important;
   margin-left:0px!important;
-  position:absolute;
-
 
 }
 .box{
-  height:1000px;
   overflow:hidden;
+  flex-direction: column-reverse;
 }
 .home_container{
   overflow: hidden;
@@ -144,6 +144,12 @@ PlanetChange();
 *{
   overflow:unset;
 }
-
+.home_container{
+  display: flex;
+  margin:32px 12px 0px 12px;
+  overflow:visible;
+  position:relative;
 }
+}
+
 </style>

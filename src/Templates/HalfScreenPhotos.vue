@@ -1,15 +1,3 @@
-
-<template>
-    <div class="half_container" id="half_conntainer_planet">
-        <div class="planet_container" id="animete_top">
-          <div id="planet_expose" class=" ">
-              <div class="planet bottom planet-bg"></div>
-              <div class="rings"></div>
-              <div class="planet top planet-bg"></div>
-          </div>
-        </div>
-        </div>
-</template>
 <script setup>
 import { watch, onMounted } from "vue";
 const props = defineProps({
@@ -138,12 +126,21 @@ watch(() => props.planet, () =>{
 });
 })
 </script>
+<template>
+    <div class="half_container" id="half_conntainer_planet">
+        <div class="planet_container" id="animete_top">
+          <div id="planet_expose" class=" ">
+              <div class="planet bottom planet-bg"></div>
+              <div class="rings"></div>
+              <div class="planet top planet-bg"></div>
+          </div>
+        </div>
+        </div>
+</template>
+
 <style lang="scss" scoped>
 
 @media only screen and (max-width: 1024px) {
-#half_conntainer_planet{
-  top:450px;
-}
 }
 .half_container{
     display: flex;
@@ -575,6 +572,17 @@ watch(() => props.planet, () =>{
     -webkit-transform: translateY(0);
             transform: translateY(0);
   }
+}
+
+@media only screen and (max-width:620px) {
+  .Sun{
+    background-image: radial-gradient(#FEBB54, #FF821D);
+    border-radius: 50%;
+    height: 17rem;
+    width:17rem;
+    animation: none;
+    box-shadow: 0px 6px 27px 13px rgba(255, 130, 29, 1);
+    }
 }
 
 </style>

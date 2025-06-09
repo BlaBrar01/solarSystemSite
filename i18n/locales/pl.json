@@ -1,0 +1,80 @@
+{
+    "menu": {
+      "Sun": "Słońce",
+      "Mercury": "Merkury",
+      "Venus": "Wenus",
+      "Earth": "Ziemia",
+      "Mars": "Mars",
+      "Jupiter": "Jowisz",
+      "Saturn": "Saturn",
+      "Uranus": "Uran",
+      "Neptune": "Neptun"
+    },
+    "planet": {
+      "Sun": {
+        "desc": "Ponieważ Słońce prowadzi fuzję wodoru w swoim jądrze, jest gwiazdą ciągu głównego. Dokładniej mówiąc, jest to gwiazda typu G2 ciągu głównego, gdzie oznaczenie typu odnosi się do jego efektywnej temperatury. Gorętsze gwiazdy ciągu głównego są jaśniejsze, ale żyją krócej. Temperatura Słońca jest pośrednia między temperaturami najgorętszych i najchłodniejszych gwiazd. Gwiazdy jaśniejsze i gorętsze od Słońca są rzadkością, natomiast znacznie słabsze i chłodniejsze gwiazdy, znane jako czerwone karły, stanowią około 75% gwiazd typu fusor w Drodze Mlecznej."
+      },
+      "Mercury": {
+        "desc": "... jest najmniejszą planetą Układu Słonecznego. Jego powierzchnia jest szarawa, z rozległym systemem klifów (rupes), powstałym w wyniku uskoków, oraz jasnymi promieniami powstałymi w wyniku uderzeń meteorytów. Powierzchnia wykazuje duże wahania temperatury – w rejonach równikowych od −170 °C w nocy do 420 °C w ciągu dnia. W przeszłości Merkury był aktywny wulkanicznie, tworząc gładkie bazaltowe równiny, podobne do powierzchni Księżyca. Prawdopodobnie Merkury ma krzemianową skorupę i duże żelazne jądro. Ma bardzo rzadką atmosferę, składającą się z cząstek wiatru słonecznego i wyrzuconych atomów. Merkury nie ma naturalnych satelitów."
+      },
+      "Venus": {
+        "desc": "... ma odblaskową, białawą atmosferę, głównie złożoną z dwutlenku węgla. Na powierzchni ciśnienie atmosferyczne jest dziewięćdziesiąt razy większe niż na poziomie morza na Ziemi. Powierzchnia Wenus ma temperaturę przekraczającą 400 °C, głównie z powodu dużej ilości gazów cieplarnianych w atmosferze. Planeta nie ma pola magnetycznego chroniącego przed wiatrem słonecznym, co sugeruje, że jej atmosfera jest utrzymywana przez aktywność wulkaniczną. Na powierzchni znajduje się wiele dowodów aktywności wulkanicznej oraz tektoniki „zastygłej pokrywy”. Wenus nie ma naturalnych satelitów."
+      },
+      "Earth": {
+        "desc": "... jest jedynym znanym miejscem we wszechświecie, gdzie istnieje życie i ciekła woda na powierzchni. Atmosfera Ziemi zawiera 78% azotu i 21% tlenu, co jest wynikiem obecności życia. Planeta ma złożony system klimatyczny i pogodowy, z drastycznymi różnicami w różnych strefach klimatycznych. Powierzchnia Ziemi jest zdominowana przez zieloną roślinność, pustynie i białe pokrywy lodowe. Powierzchnia Ziemi jest kształtowana przez tektonikę płyt, która utworzyła masy kontynentalne. Magnetosfera Ziemi chroni powierzchnię przed promieniowaniem, ogranicza utratę atmosfery i sprzyja możliwości życia."
+      },
+      "Mars": {
+        "desc": "... ma promień około połowy promienia Ziemi. Większość powierzchni Marsa jest czerwona z powodu tlenku żelaza w glebie, a bieguny są pokryte białymi czapami lodowymi z wody i dwutlenku węgla. Atmosfera Marsa składa się głównie z dwutlenku węgla, a ciśnienie na powierzchni to zaledwie 0,6% tego na Ziemi, co jednak pozwala na występowanie pewnych zjawisk pogodowych. W ciągu marsjańskiego roku (687 dni ziemskich) występują duże wahania temperatury – od −78,5 °C do 5,7 °C. Powierzchnia usiana jest wulkanami i dolinami ryftowymi oraz bogata w minerały. Mars ma silnie zróżnicowaną strukturę wewnętrzną i utracił magnetosferę 4 miliardy lat temu. Mars ma dwa małe księżyce."
+      },
+      "Jupiter": {
+        "desc": "... jest największą i najbardziej masywną planetą Układu Słonecznego. Na jego powierzchni widoczne są pomarańczowo-brązowe i białe pasy chmur, przemieszczające się zgodnie z zasadami cyrkulacji atmosferycznej, oraz gigantyczne burze, takie jak Wielka Czerwona Plama i białe „owale”. Jowisz posiada wystarczająco silną magnetosferę, by odchylać promieniowanie jonizujące i generować zorze polarne na biegunach."
+      },
+      "Saturn": {
+        "desc": "... ma charakterystyczny system pierścieni widoczny wokół równika, złożony z drobnych cząstek lodu i skał. Podobnie jak Jowisz, składa się głównie z wodoru i helu. Na jego biegunach występują osobliwe burze w kształcie sześciokątów, większe od średnicy Ziemi. Saturn ma magnetosferę zdolną do wytwarzania słabych zórz polarnych."
+      },
+      "Uranus": {
+        "desc": "... jako jedyna planeta, krąży wokół Słońca „na boku” z nachyleniem osi większym niż 90°. Powoduje to ekstremalne zmiany sezonowe, ponieważ każdy biegun zwraca się naprzemiennie w stronę i od Słońca. Zewnętrzna warstwa Urana ma stłumiony cyjanowy kolor, ale pod tymi chmurami kryje się wiele tajemnic jego klimatu, takich jak nietypowo niska emisja ciepła wewnętrznego i nieregularne formowanie się chmur."
+      },
+      "Neptune": {
+        "desc": "... jest najdalszą znaną planetą w Układzie Słonecznym. Jego zewnętrzna atmosfera ma lekko cyjanowy kolor, a na powierzchni pojawiają się burze przypominające ciemne plamy. Podobnie jak w przypadku Urana, wiele zjawisk atmosferycznych Neptuna pozostaje niewyjaśnionych, takich jak nienaturalnie wysoka temperatura termosfery czy silne nachylenie (47°) magnetosfery."
+      }
+    },
+    "cookies":{
+      "buttons":{
+          "consent":"Ok, zgadzam się",
+          "reject":"Nie zgadzam się",
+          "change":"Zmieniam zgody",
+          "consent_change":"Zatwierdź wybory",
+          "discard":"Anuluj"
+      },
+      "title":"Dbamy o Twoją prywatność",
+      "cookiesContent":"Nasza strona internetowa wykorzystuje pliki cookies w celu zapewnienia jej prawidłowego działania oraz w celach analitycznych i marketingowych. Pliki cookies pozwalają nam dostosować treści do Twoich preferencji oraz analizować ruch na stronie.Możesz w każdej chwili zmienić ustawienia dotyczące cookies w swojej przeglądarce internetowej. Szczegółowe informacje znajdziesz w naszej",
+      "adjust":{
+        "title":"Skonfiguruj zgody",
+        "content":"Dostosuj swoje zgody udzielone na stronie",
+        "subTitle":"Wyrażam zgody na:"
+      },
+      "adjustCategories":{
+        "neccessary":{
+          "title":"Niezbędne",
+          "desc":"Niezbędne pliki cookie mają kluczowe znaczenie dla podstawowych funkcji witryny i witryna nie będzie działać w zamierzony sposób bez nich.Te pliki cookie nie przechowują żadnych danych umożliwiających identyfikację osoby."
+        },
+        "functional":{
+          "title":"Funkcjonalne",
+          "desc":"Funkcjonalne pliki cookie pomagają wykonywać pewne funkcje, takie jak udostępnianie zawartości witryny na platformach mediów społecznościowych, zbieranie informacji zwrotnych i inne funkcje stron trzecich."
+        },
+        "analitics":{
+          "title":"Analityczne",
+          "desc":"Analityczne pliki cookie służą do zrozumienia, w jaki sposób użytkownicy wchodzą w interakcję z witryną. Te pliki cookie pomagają dostarczać informacje o metrykach liczby odwiedzających, współczynniku odrzuceń, źródle ruchu itp."
+        },
+        "performance":{
+          "title":"Wydajnościowe",
+          "desc":"Wydajnościowe pliki cookie służą do zrozumienia i analizy kluczowych wskaźników wydajności witryny, co pomaga zapewnić lepsze wrażenia użytkownika dla odwiedzających."
+        },
+        "adverts":{
+          "title":"Reklamowe",
+          "desc":"Reklamowe pliki cookie służą do dostarczania użytkownikom spersonalizowanych reklam w oparciu o strony, które odwiedzili wcześniej, oraz do analizowania skuteczności kampanii reklamowej."
+        }
+      }
+  }
+}
